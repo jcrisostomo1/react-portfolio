@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300");
+
+@layer base {
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+        @apply py-6 text-4xl;
+    }
+
+}
