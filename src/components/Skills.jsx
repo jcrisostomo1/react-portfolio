@@ -4,8 +4,8 @@ import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import JavaScript from '../assets/javascript.png'
 import GitHub from '../assets/github.png'
-//Java
-//.NET
+import Java from '../assets/java.png'
+import CSharp from '../assets/c#.png'
 
 const Skills = () => {
   return (
@@ -30,8 +30,12 @@ const Skills = () => {
                     <p>JavaScript</p>
                 </div>
                 <div className='shadow-md shadow-{#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={GitHub} alt="Java Icon" />
+                    <img className='w-20 mx-auto' src={Java} alt="Java Icon" />
                     <p>Java</p>
+                </div>
+                <div className='shadow-md shadow-{#040c16] hover:scale-110 duration-500'>
+                    <img className='w-20 mx-auto' src={CSharp} alt="C# Icon" />
+                    <p>C#</p>
                 </div>
                 <div className='shadow-md shadow-{#040c16] hover:scale-110 duration-500'>
                     <img className='w-20 mx-auto' src={GitHub} alt="Github Icon" />
