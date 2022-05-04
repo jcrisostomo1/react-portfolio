@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 
 @layer base {
     li {
         @apply px-4;
         @apply cursor-pointer;
-        @apply py-6 text-4xl;
+    }
+    .mobile-navbar {
+        @apply py-6 text-3xl;
+    }
+    .socials {
+        @apply flex justify-between items-center w-full text-gray-300;
     }
 
 }
