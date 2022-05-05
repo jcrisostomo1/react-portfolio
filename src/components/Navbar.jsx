@@ -50,7 +50,7 @@ const Navbar = () => {
               <a class="socials" href='https://github.com/jcrisostomo1'target="_blank" rel="noreferrer noopener">GitHub <FaGithub size={30} /></a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-              <a class="socials" href='/'>Email <HiOutlineMail size={30} /></a>
+              <a class="socials" href='mailto:joshuacr22@gmail.com'>Email <HiOutlineMail size={30} /></a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
               <a class="socials" href={CV} without rel="noopener noreferrer" target="_blank">Resume <BsFillPersonLinesFill size={30} /></a>
