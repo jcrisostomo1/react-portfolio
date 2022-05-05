@@ -3,6 +3,8 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assets/logo.png'
+import {Link} from 'react-scroll'
+import CV from '../assets/myCV.pdf'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -16,11 +18,11 @@ const Navbar = () => {
 
         {/* menu */}
         <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Resume</li>
-            <li>Contact</li>
+            <li><Link to='home' smooth={true} duration={500}>Home</Link></li>
+            <li><Link to='about' smooth={true} duration={500}>About</Link></li>
+            <li><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
+            <li><Link to='resume' smooth={true} duration={500}>Resume</Link></li>
+            <li><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
         </ul>
         
 
@@ -31,11 +33,11 @@ const Navbar = () => {
 
         {/* mobile menu */}
         <ul className={nav ? 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center' : 'hidden' }>
-            <li class="mobile-navbar">Home</li>
-            <li class="mobile-navbar">About</li>
-            <li class="mobile-navbar">Skills</li>
-            <li class="mobile-navbar">Resume</li>
-            <li class="mobile-navbar">Contact</li>
+            <li class="mobile-navbar"><Link onClick={handleClick} to='home' smooth={true} duration={500}>Home</Link></li>
+            <li class="mobile-navbar"><Link onClick={handleClick} to='about' smooth={true} duration={500}>About</Link></li>
+            <li class="mobile-navbar"><Link onClick={handleClick} to='skills' smooth={true} duration={500}>Skills</Link></li>
+            <li class="mobile-navbar"><Link onClick={handleClick} to='resume' smooth={true} duration={500}>Resume</Link></li>
+            <li class="mobile-navbar"><Link onClick={handleClick} to='contact' smooth={true} duration={500}>Contact</Link></li>
         </ul>
         
         {/* social icons */}
@@ -51,7 +53,7 @@ const Navbar = () => {
               <a class="socials" href='/'>Email <HiOutlineMail size={30} /></a>
             </li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-              <a class="socials" href='/'>Resume <BsFillPersonLinesFill size={30} /></a>
+              <a class="socials" href={CV} without rel="noopener noreferrer" target="_blank">Resume <BsFillPersonLinesFill size={30} /></a>
             </li>
           </ul>
         </div>
