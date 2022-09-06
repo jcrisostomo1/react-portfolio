@@ -1,6 +1,6 @@
 import React from 'react'
+import CaclulatorImg from '../assets/calculator.png';
 import WorkImg from '../assets/workImg.jpeg';
-import realEstate from '../assets/realestate.jpg';
 
 const Work = () => {
   return (
@@ -14,7 +14,7 @@ const Work = () => {
       {/* Container */}
       <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'> 
         {/* Grid Item */}
-        <div style={{backgroundImage: `url(${WorkImg})`}}
+        <div style={{backgroundImage: `url(${CaclulatorImg})`}}
         className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
           {/*Hover Effects*/}
           <div className='opacity-0 group-hover:opacity-100'>
@@ -22,10 +22,10 @@ const Work = () => {
               React Application
             </span>
             <div className='pt-8 text-center'>
-              <a href='/'>
+              <a href='https://jcrisostomo1.github.io/odin-calculator/' rel="noreferrer" target="_blank">
                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
               </a>
-              <a href='/'>
+              <a href='https://github.com/jcrisostomo1/odin-calculator' rel="noreferrer" target="_blank">
                 <button  className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
               </a>
             </div>
