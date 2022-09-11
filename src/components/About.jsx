@@ -18,9 +18,12 @@ About = () => {
                     <p className='sm:text-right text-4xl font-bold'>Hi, I'm Josh, nice to meet you. Feel free to to take a look around!</p>
                 </div>
                 <div>
-                    <p>I am passionate about buidling software applications that will help make our lives easier. I've had experience primarily with backend development using Java 8 and Spring Framework.
-                        I would like to transition to a more full stack role to include front-end development skills and expertise to help me become a more well-rounded developer.
+                    <p>
+											I am passionate about building software applications that will help make our lives easier. I've had experience primarily with backend development using Java 8 and Spring Framework.
+                      I would like to transition to a more full stack role to include front-end development skills and expertise to help me become a more well-rounded developer.
                     </p>
+										<br />
+										<p>Aside from programming, I enjoy playing basketball, weight training, and PC gaming. In my free time I also enjoy driving and being a car enthusiast. I hope to one day own and build my own project car!</p>
                 </div>
             </div>
         </div>
